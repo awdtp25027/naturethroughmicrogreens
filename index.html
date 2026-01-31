@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Through</title> <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .product-card img {
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 40px;
+            color: #2e7d32 !important;
+        }
+
+        .footer {
+            background: #2e7d32;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: #388e3c;
+        }
+
+        /* General H2 Style */
+        h2 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #023604;
+            /* Natural green */
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Optional underline effect */
+        h2.section-title {
+            position: relative;
+            display: inline-block;
+        }
+
+        h2.section-title::after {
+            content: "";
+            width: 80px;
+            height: 3px;
+            background: #66bb6a;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 17px;
+            font-weight: bold;
+            color: #0953cb;
+            /* Natural green */
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body> <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container"> <a class="navbar-brand" href="#">Nature Through</a> <button class="navbar-toggler"
+                type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> <span
+                    class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> <!-- Slider Banner -->
+    <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active"> <img src="img/2.jpg" class="d-block w-100" alt="Microgreens">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Fresh Microgreens</h2>
+                    <p>Grown naturally, harvested daily.</p>
+                </div>
+            </div>
+            <div class="carousel-item"> <img src="img/4.jpg" class="d-block w-100" alt="Edible Flowers">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Edible Flowers</h2>
+                    <p>Colorful, aromatic, and ready for your dishes.</p>
+                </div>
+            </div>
+            <div class="carousel-item"> <img src="img/6.jpg" class="d-block w-100" alt="Sprouted Mung Beans">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Sprouted Mung Beans</h2>
+                    <p>High nutrition. Pure freshness.</p>
+                </div>
+            </div>
+        </div> <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span> </button> <button class="carousel-control-next"
+            type="button" data-bs-target="#mainSlider" data-bs-slide="next"> <span
+                class="carousel-control-next-icon"></span> </button>
+    </div> <!-- Intro Section -->
+    <div class="container text-center mt-5">
+        <h2 class="text-success">Welcome to Nature Through</h2>
+        <p class="tagline">Delivering fresh, premium microgreens, edible flowers, and sprouted mung beans.</p>
+    </div> <!-- Product Section -->
+    <div class="container mt-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card product-card shadow-sm"> <img src="img/10.jpg" class="card-img-top" alt="Microgreens">
+                    <div class="card-body text-center">
+                        <h4 class="text-success">Microgreens</h4>
+                        <p>Nutrient-rich, flavorful greens harvested at peak quality.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card shadow-sm"> <img src="img/12.jpg" class="card-img-top"
+                        alt="Edible Flowers">
+                    <div class="card-body text-center">
+                        <h4 class="text-success">Edible Flowers</h4>
+                        <p>Vibrant flowers perfect for salads, desserts, and drinks. ...... </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card shadow-sm"> <img src="img/14.jpg" class="card-img-top"
+                        alt="Sprouted Mung Beans">
+                    <div class="card-body text-center">
+                        <h4 class="text-success">Sprouted Mung Beans</h4>
+                        <p>Crunchy, protein-rich sprouts for healthy meals.
+                            ................................................... </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Company Purpose & Vision Section -->
+    <div class="container mt-5 mb-5">
+        <h2 class="section-title">Our Purpose & Vision</h2>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-10">
+                <div class="p-4 rounded shadow-sm" style="background:#f1f8e9;">
+                    <p style="font-size:20px; color:#2e7d32; text-transform:none; font-weight:600;"> “We specialize in
+                        growing high-quality, nutrient-dense microgreens and edible flowers that support a healthier
+                        lifestyle and elevate your culinary experiences.” </p>
+                    <p style="font-size:18px; color:#4e4e4e; text-transform:none;"> At <strong>Nature Through</strong>,
+                        our vision is to deliver the purest, freshest produce directly from our farm to your kitchen. We
+                        focus on sustainability, natural growing methods, and harvesting at peak freshness to ensure
+                        exceptional flavor and nutrition. </p>
+                    <p style="font-size:18px; color:#4e4e4e; text-transform:none;"> We are proud to work closely with
+                        local restaurants, chefs, and home cooks in our area — providing premium-quality microgreens
+                        grown with care. Contact us for <strong>weekly delivery</strong>, updated pricing, and our fresh
+                        harvest schedule. </p>
+                    <div class="text-center mt-3"> <a href="#" class="btn btn-success px-4 py-2"
+                            style="border-radius:30px;"> Contact Us for Weekly Delivery </a> </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- MINIHERBS Special Section -->
+    <div class="container mt-5 mb-5">
+        <h2 class="section-title">WHAT MAKES OUR MINIHERBS SPECIAL?</h2>
+        <div class="row g-4 mt-4"> <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="p-4 rounded shadow-sm text-center" style="background:#f1f8e9;"> <img
+                        src="https://img.icons8.com/color/96/plant-under-sun.png" width="70">
+                    <h5 class="text-success mt-3">Locally Grown with Hygiene Standards</h5>
+                    <p style="color:#4e4e4e; font-size:16px;"> Cultivated in a clean, controlled environment for maximum
+                        freshness and safety. </p>
+                </div>
+            </div>
+
+
+
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="p-4 rounded shadow-sm text-center" style="background:#f1f8e9;"> <img
+                        src="https://img.icons8.com/?size=100&id=18053&format=png&color=000000" width="70">
+                    <h5 class="text-success mt-3">Grown from Non-GMO Seeds</h5>
+                    <p style="color:#4e4e4e; font-size:16px;"> Only pure, natural seeds are used—no genetic
+                        modification, ever. </p>
+                </div>
+            </div> <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="p-4 rounded shadow-sm text-center" style="background:#f1f8e9;"> <img
+                        src="https://img.icons8.com/?size=100&id=18049&format=png&color=000000" width="70">
+                    <h5 class="text-success mt-3">Delivered Fresh to Your Doorstep</h5>
+                    <p style="color:#4e4e4e; font-size:16px;"> Straight from our farm to your table, ensuring peak
+                        nutrition and taste. </p>
+                </div>
+            </div> <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="p-4 rounded shadow-sm text-center" style="background:#f1f8e9;"> <img
+                        src="https://img.icons8.com/color/96/no-pesticides.png" width="70">
+                    <h5 class="text-success mt-3">Zero Agrochemicals</h5>
+                    <p style="color:#4e4e4e; font-size:16px;"> 100% free from pesticides, herbicides, and synthetic
+                        fertilizers. </p>
+                </div>
+            </div> 
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="p-4 rounded shadow-sm text-center" style="background:#f1f8e9;"> <img
+                        src="https://img.icons8.com/?size=100&id=jYpWAn1MHzIP&format=png&color=000000" width="70">
+                    <h5 class="text-success mt-3">Rich in Nutrition</h5>
+                    <p style="color:#4e4e4e; font-size:16px;"> Packed with essential nutrients to support a healthier
+                        lifestyle. </p>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="p-4 rounded shadow-sm text-center" style="background:#f1f8e9;"> <img
+                        src="https://img.icons8.com/?size=100&id=jeGCoNFfazFq&format=png&color=000000" width="70">
+                    <h5 class="text-success mt-3">Rich in Quality</h5>
+                    <p style="color:#4e4e4e; font-size:16px;"> Packed with GMP standard to support a healthier
+                        lifestyle. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GMP Certification Section -->
+    <div class="container mt-5 mb-5">
+        <h2 class="section-title">Our GMP Certification</h2>
+
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-10">
+                <div class="p-4 rounded shadow-sm text-center" style="background:#e8f5e9;">
+                    <img src="https://img.icons8.com/color/96/certification.png" width="80" alt="GMP Certification">
+                    <h4 class="text-success mt-3">✔ GMP Certified Company</h4>
+                    <img src="img/gmp.jpg" style="width:800px; border-radius:10px;">
+
+                    <p style="font-size:18px; color:#2e7d32; font-weight:600; margin-top:15px;">
+                        Nature Through strictly follows <strong>Good Manufacturing Practices (GMP)</strong> to ensure
+                        that every product you receive is safe, hygienic, and of the highest quality.
+                    </p>
+
+                    <h5 class="text-success mt-3">Benefits for Our Customers:</h5>
+                    <ul style="list-style: none; padding-left:0; font-size:16px; color:#4e4e4e; margin-top:10px;">
+                        <li>✔ Hygienic and clean production environment</li>
+                        <li>✔ Reduced risk of contamination</li>
+                        <li>✔ Consistent quality in every batch</li>
+                        <li>✔ Safe handling & packaging for maximum freshness</li>
+                        <li>✔ Traceability and accountability for all products</li>
+                        <li>✔ Fresh, pure, and reliable edible products delivered to you</li>
+                    </ul>
+
+                    <p style="font-size:16px; color:#2e7d32; margin-top:15px;">
+                        GMP ensures we monitor every step from seed to delivery — guaranteeing top-quality microgreens,
+                        edible flowers, and sprouted mung beans for your healthy lifestyle.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================= -->
+<!--   MICROGREENS BENEFITS    -->
+<!-- ========================= -->
+<section style="
+    background:#03684f; 
+    color:white; 
+    padding:60px 20px; 
+    font-family:Roboto, Arial, sans-serif;
+">
+  <div style="max-width:1100px; margin:auto;">
+
+      <h2 style="text-align:center; font-size:32px; margin-bottom:15px; color:#034b21;">
+        Health Benefits of Our Microgreens
+      </h2>
+      <p style="text-align:center; font-size:16px; max-width:800px; margin:0 auto 40px; color:#e0e0e0;">
+        Microgreens are tiny but unbelievably powerful. Research shows they contain 
+        <strong style="color:#00e676;">up to 40% more nutrients</strong> than fully grown vegetables —
+        giving your body a richer dose of vitamins, minerals, antioxidants, and phytochemicals.
+      </p>
+
+      <!-- Cards container -->
+      <div style="
+          display:grid;
+          grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+          gap:25px;
+      ">
+
+        <!-- Card 1 -->
+        <div style="
+            background:#1c1c1c;
+            padding:25px;
+            border-radius:15px;
+            box-shadow:0 0 15px rgba(0,0,0,0.5);
+            transition:0.3s;
+        ">
+          <h3 style="color:#00e676; margin-top:0;">🌿 Rich in Nutrients</h3>
+          <p style="color:#d0d0d0; line-height:1.5;">
+            Microgreens contain concentrated levels of vitamins A, C, E, K, folate, iron,
+            potassium, and antioxidants — often <strong>30–40% higher</strong> than mature vegetables.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div style="
+            background:#1c1c1c;
+            padding:25px;
+            border-radius:15px;
+            box-shadow:0 0 15px rgba(0,0,0,0.5);
+            transition:0.3s;
+        ">
+          <h3 style="color:#00e676; margin-top:0;">❤️ Supports Heart Health</h3>
+          <p style="color:#d0d0d0; line-height:1.5;">
+            High fiber, vitamin K, and essential minerals in microgreens help 
+            <strong>support healthy blood pressure</strong> and reduce inflammation —
+            two key factors for heart protection.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div style="
+            background:#1c1c1c;
+            padding:25px;
+            border-radius:15px;
+            box-shadow:0 0 15px rgba(0,0,0,0.5);
+            transition:0.3s;
+        ">
+          <h3 style="color:#00e676; margin-top:0;">🛡️ Boosts Immune Strength</h3>
+          <p style="color:#d0d0d0; line-height:1.5;">
+            Packed with antioxidants and phytochemicals that help your body fight infections,
+            protect your cells, and keep your immunity strong year-round.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div style="
+            background:#1c1c1c;
+            padding:25px;
+            border-radius:15px;
+            box-shadow:0 0 15px rgba(0,0,0,0.5);
+            transition:0.3s;
+        ">
+          <h3 style="color:#00e676; margin-top:0;">⚡ Natural Energy Booster</h3>
+          <p style="color:#d0d0d0; line-height:1.5;">
+            The dense nutrient profile and high chlorophyll content help increase
+            natural energy levels without relying on caffeine or sugar.
+          </p>
+        </div>
+
+        <!-- Card 5 -->
+        <div style="
+            background:#1c1c1c;
+            padding:25px;
+            border-radius:15px;
+            box-shadow:0 0 15px rgba(0,0,0,0.5);
+            transition:0.3s;
+        ">
+          <h3 style="color:#00e676; margin-top:0;">🔥 Supports Weight Management</h3>
+          <p style="color:#d0d0d0; line-height:1.5;">
+            Low in calories but extremely rich in nutrients — making microgreens perfect
+            for healthy weight control and balanced nutrition.
+          </p>
+        </div>
+
+        <!-- Card 6 -->
+        <div style="
+            background:#1c1c1c;
+            padding:25px;
+            border-radius:15px;
+            box-shadow:0 0 15px rgba(0,0,0,0.5);
+            transition:0.3s;
+        ">
+          <h3 style="color:#00e676; margin-top:0;">🌱 Better Digestion</h3>
+          <p style="color:#d0d0d0; line-height:1.5;">
+            High fiber helps keep your digestive system active, smooth, and healthy,
+            preventing bloating while improving nutrient absorption.
+          </p>
+        </div>
+
+      </div>
+  </div>
+</section>
+
+
+
+    <!-- Contact Details Section -->
+    <div class="container mt-5 mb-5">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="p-4 shadow-sm rounded" style="background:#f1f8e9;">
+                    <h4 class="text-success text-center mb-3" style="font-weight:bold;"> We're Here to Help You! </h4>
+                    <p class="text-center" style="font-size:18px; color:#4e4e4e;"> For fresh microgreens, edible
+                        flowers, sprouted mung beans, or weekly delivery information — contact us anytime. </p>
+                    <!-- WhatsApp Contact -->
+                    <div class="text-center mt-4">
+                        <p style="font-size:22px; color:#1b5e20; font-weight:bold;"> 📞 WhatsApp: <span
+                                style="color:#2e7d32;">074 349 7433</span> </p> <a href="https://wa.me/94759987605"
+                            target="_blank" class="btn btn-success px-4 py-2"
+                            style="border-radius:30px; font-size:18px;"> Message on WhatsApp </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Footer -->
+    <div class="footer"> © 2025 Nature Through — Fresh Microgreens, Edible Flowers & Sprouted Mung Beans </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Floating WhatsApp Button --> <a href="https://wa.me/94759987605" target="_blank" class="whatsapp-float"> <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> </a>
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            width: 65px;
+            height: 65px;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25d366;
+            border-radius: 50%;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            padding: 10px;
+            transition: 0.3s;
+        }
+
+        .whatsapp-float img {
+            width: 45px;
+            margin-top: 5px;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.12);
+        }
+    </style>
+</body>
+
+</html>
